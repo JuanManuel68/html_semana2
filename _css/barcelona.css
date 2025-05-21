@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1d2951;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #a50044;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+h1, h2 {
+  color: #f3f3f3;
+}
+
+blockquote {
+  font-style: italic;
+  background-color: #3e4e85;
+  border-left: 5px solid #ffc72c;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.club-img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
