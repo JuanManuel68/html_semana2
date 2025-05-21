@@ -1,44 +1,68 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #dc052d;
-  color: #fff;
+  background-color: #207bf1;
+  color: #000000;
   margin: 0;
   padding: 0;
 }
 
 header, footer {
-  background-color: #ffffff;
-  color: #dc052d;
+  background-color: #dc052d;
+  color: #000000;
   text-align: center;
   padding: 1rem 0;
 }
-
-nav a {
-  color: #dc052d;
-  text-decoration: none;
-  margin: 0 1rem;
-}
-
 main {
   padding: 2rem;
 }
 
 h1, h2 {
-  color: #ffffff;
+  color: #000000;
 }
 
 blockquote {
   font-style: italic;
   background-color: #bb1a1a;
-  border-left: 5px solid #ffffff;
+  border-left: 5px solid #000000;
   padding: 1rem;
   margin: 1rem 0;
 }
 
-.club-img {
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color:white;
+}
+.nav-img {
+  width: 60px;
+  height: auto;
+}
+.content-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.imagen-unica {
+  flex: 1;
+  max-width: 700px;
+  height: 500px;
+  border: 2px solid black;
+}
+
+.imagen-unica img {
   width: 100%;
-  max-width: 600px;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  margin: 1rem auto;
-  border-radius: 8px;
+}
+.volver {
+  background-color: #3e4e85;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
 }

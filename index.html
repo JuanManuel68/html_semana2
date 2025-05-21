@@ -4,26 +4,129 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Top 5 Equipos de Fútbol</title>
-  <link rel="stylesheet" href="./_css/styles.css"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #1d3557;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    main p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+
+    .teams-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .team {
+      background-color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      width: 200px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .team:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .team img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .team-name {
+      padding: 12px;
+      font-weight: bold;
+      font-size: 1.05rem;
+    }
+
+    footer {
+      background-color: #1d3557;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .team {
+        width: 90vw;
+        max-width: 300px;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>Los 5 Equipos de Fútbol Más Grandes del Mundo</h1>
-    <nav>
-      <ul>
-        <li><a href="./_html/rmadrid.html">Real Madrid</a></li>
-        <li><a href="./_html/barcelona.html">FC Barcelona</a></li>
-        <li><a href="./_html/Munited.html">Manchester United</a></li>
-        <li><a href="./_html/bayern.html">Bayern Múnich</a></li>
-        <li><a href="./_html/milan.html">AC Milan</a></li>
-      </ul>
-    </nav>
   </header>
+
   <main>
     <p>Explora la historia y legado de los clubes más emblemáticos del fútbol mundial.</p>
+
+    <div class="teams-grid">
+      <a href="./_html/rmadrid.html" class="team">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" alt="Escudo Real Madrid">
+        <div class="team-name">Real Madrid</div>
+      </a>
+
+      <a href="./_html/barcelona.html" class="team">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" alt="Escudo FC Barcelona">
+        <div class="team-name">FC Barcelona</div>
+      </a>
+
+      <a href="./_html/Munited.html" class="team">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="Escudo Manchester United">
+        <div class="team-name">Manchester United</div>
+      </a>
+
+      <a href="./_html/bayern.html" class="team">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg/250px-FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg.png" alt="Escudo Bayern Múnich">
+        <div class="team-name">Bayern Múnich</div>
+      </a>
+
+      <a href="./_html/milan.html" class="team">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Logo_of_AC_Milan.svg" alt="Escudo AC Milan">
+        <div class="team-name">AC Milan</div>
+      </a>
+    </div>
   </main>
+
   <footer>
     <p>&copy; 2025 Fútbol Mundial</p>
   </footer>
+
 </body>
 </html>

@@ -3,19 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>FC Barcelona</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../_css/barcelona.css">
 </head>
 <body>
   <header>
+     <nav class="navbar"> 
+        <img src="../_img/barcelona.png" alt="Logo Izquierda" class="nav-img">
+        <div>
     <h1>FC Barcelona</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-    </nav>
+  <button onclick="history.back()" class="volver">Volver</button>
+        </div>
+    <img src="../_img/barcelona.png" alt="Logo Derecha" class="nav-img">
+    
+  </nav>
   </header>
 
-  <main>
+  <main class="content-flex">
     <section>
-      <img src="barcelona.jpg" alt="FC Barcelona" class="club-img">
       <article>
         <h2>Información General</h2>
         <ul>
@@ -45,13 +49,16 @@
           <li>Robert Lewandowski (Delantero)</li>
         </ul>
 
-        <blockquote>
-          “El Barça no es solo un club, es un sentimiento.” – Johan Cruyff
-        </blockquote>
+        
       </article>
     </section>
+      <aside class="imagen-unica">
+    <img src="../_img/bc.png" alt="Imagen del club">
+  </aside>
   </main>
-
+  <blockquote>
+          “El Barça no es solo un club, es un sentimiento.” – Johan Cruyff
+        </blockquote>
   <footer>
     <p>&copy; 2025 Fútbol Mundial</p>
   </footer>

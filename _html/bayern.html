@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>FC Bayern Múnich</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../_css/bayern.css">
 </head>
 <body>
   <header>
-    <h1>FC Bayern Múnich</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-    </nav>
+    <nav class="navbar">
+    <img src="../_img/bayern.png" alt="Logo Izquierda" class="nav-img">
+        <div>
+    <h1>FC Bayern Munich</h1>
+    <button onclick="history.back()" class="volver">Volver</button>
+        </div>
+    <img src="../_img/bayern.png" alt="Logo Derecha" class="nav-img">
+  </nav>
   </header>
 
-  <main>
+  <main class="content-flex">
     <section>
-      <img src="bayern.jpg" alt="Bayern Múnich" class="club-img">
       <article>
         <h2>Información General</h2>
         <ul>
@@ -43,14 +46,15 @@
           <li>Leroy Sané (Delantero)</li>
           <li>Harry Kane (Delantero)</li>
         </ul>
-
-        <blockquote>
-          “Mia san Mia: Nosotros somos nosotros.” – Lema del Bayern
-        </blockquote>
       </article>
     </section>
+    <aside class="imagen-unica">
+    <img src="../_img/by.jpg" alt="Imagen del club">
+  </aside>
   </main>
-
+   <blockquote>
+          “Mia san Mia: Nosotros somos nosotros.” – Lema del Bayern
+        </blockquote>
   <footer>
     <p>&copy; 2025 Fútbol Mundial</p>
   </footer>

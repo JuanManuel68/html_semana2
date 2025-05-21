@@ -3,23 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Manchester United</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../_css/munited.css">
 </head>
 <body>
   <header>
-    <h1>Manchester United</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-    </nav>
+    <nav class="navbar">
+    <img src="../_img/Munited.png" alt="Logo Izquierda" class="nav-img">
+    <div>
+        <h1>Manchester United</h1> 
+        <button onclick="history.back()" class="volver">Volver</button>
+    </div>
+    <img src="../_img/Munited.png" alt="Logo Derecha" class="nav-img">
+  </nav>
   </header>
 
-  <main>
+  <main class="content-flex">
     <section>
-      <img src="manchester-united.jpg" alt="Manchester United" class="club-img">
       <article>
         <h2>Información General</h2>
         <ul>
-          <li><strong>Fundación:</strong> 1878 (como Newton Heath, desde 1902 como Manchester United)</li>
+          <li><strong>Fundación:</strong> 1878 (como Newton Heath, <br>desde 1902 
+             como Manchester United)</li>
           <li><strong>País:</strong> Inglaterra</li>
           <li><strong>Estadio:</strong> Old Trafford</li>
         </ul>
@@ -44,14 +48,15 @@
           <li>Rasmus Højlund (Delantero)</li>
           <li>Antony (Delantero)</li>
         </ul>
-
-        <blockquote>
-          “Algunos clubes tienen historia, nosotros hacemos historia.” – Sir Alex Ferguson
-        </blockquote>
       </article>
     </section>
+   <aside class="imagen-unica">
+    <img src="../_img/Mu.jpg" alt="Imagen del club">
+  </aside>
   </main>
-
+   <blockquote>
+          “Algunos clubes tienen historia, nosotros hacemos historia.” – Sir Alex Ferguson
+        </blockquote>
   <footer>
     <p>&copy; 2025 Fútbol Mundial</p>
   </footer>
